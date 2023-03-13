@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmActDetails
+Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -49,18 +49,19 @@ Partial Class frmActDetails
         Me.lblEmail2 = New System.Windows.Forms.Label()
         Me.lblWebsite = New System.Windows.Forms.Label()
         Me.lblABN = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnSave = New System.Windows.Forms.Button()
         Me.txtFax = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtEmail2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtWebsite = New System.Windows.Forms.TextBox()
         Me.txtABN = New System.Windows.Forms.TextBox()
+        Me.btnShowData = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(65, 41)
+        Me.lblName.Location = New System.Drawing.Point(271, 28)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(42, 15)
         Me.lblName.TabIndex = 0
@@ -69,7 +70,7 @@ Partial Class frmActDetails
         'lblAddress
         '
         Me.lblAddress.AutoSize = True
-        Me.lblAddress.Location = New System.Drawing.Point(55, 83)
+        Me.lblAddress.Location = New System.Drawing.Point(261, 70)
         Me.lblAddress.Name = "lblAddress"
         Me.lblAddress.Size = New System.Drawing.Size(52, 15)
         Me.lblAddress.TabIndex = 1
@@ -77,14 +78,14 @@ Partial Class frmActDetails
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(115, 40)
+        Me.txtName.Location = New System.Drawing.Point(321, 27)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(188, 23)
         Me.txtName.TabIndex = 2
         '
         'txtAddress
         '
-        Me.txtAddress.Location = New System.Drawing.Point(115, 80)
+        Me.txtAddress.Location = New System.Drawing.Point(321, 67)
         Me.txtAddress.Multiline = True
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(188, 23)
@@ -93,7 +94,7 @@ Partial Class frmActDetails
         'lblCity
         '
         Me.lblCity.AutoSize = True
-        Me.lblCity.Location = New System.Drawing.Point(76, 125)
+        Me.lblCity.Location = New System.Drawing.Point(282, 112)
         Me.lblCity.Name = "lblCity"
         Me.lblCity.Size = New System.Drawing.Size(31, 15)
         Me.lblCity.TabIndex = 4
@@ -101,7 +102,7 @@ Partial Class frmActDetails
         '
         'txtCity
         '
-        Me.txtCity.Location = New System.Drawing.Point(115, 120)
+        Me.txtCity.Location = New System.Drawing.Point(321, 107)
         Me.txtCity.Name = "txtCity"
         Me.txtCity.Size = New System.Drawing.Size(188, 23)
         Me.txtCity.TabIndex = 5
@@ -109,7 +110,7 @@ Partial Class frmActDetails
         'lblState
         '
         Me.lblState.AutoSize = True
-        Me.lblState.Location = New System.Drawing.Point(71, 160)
+        Me.lblState.Location = New System.Drawing.Point(277, 147)
         Me.lblState.Name = "lblState"
         Me.lblState.Size = New System.Drawing.Size(36, 15)
         Me.lblState.TabIndex = 6
@@ -117,7 +118,7 @@ Partial Class frmActDetails
         '
         'txtState
         '
-        Me.txtState.Location = New System.Drawing.Point(115, 157)
+        Me.txtState.Location = New System.Drawing.Point(321, 144)
         Me.txtState.Name = "txtState"
         Me.txtState.Size = New System.Drawing.Size(52, 23)
         Me.txtState.TabIndex = 7
@@ -125,7 +126,7 @@ Partial Class frmActDetails
         'lblPostCode
         '
         Me.lblPostCode.AutoSize = True
-        Me.lblPostCode.Location = New System.Drawing.Point(182, 160)
+        Me.lblPostCode.Location = New System.Drawing.Point(388, 147)
         Me.lblPostCode.Name = "lblPostCode"
         Me.lblPostCode.Size = New System.Drawing.Size(64, 15)
         Me.lblPostCode.TabIndex = 8
@@ -133,7 +134,7 @@ Partial Class frmActDetails
         '
         'txtPostCode
         '
-        Me.txtPostCode.Location = New System.Drawing.Point(251, 156)
+        Me.txtPostCode.Location = New System.Drawing.Point(457, 143)
         Me.txtPostCode.Name = "txtPostCode"
         Me.txtPostCode.Size = New System.Drawing.Size(52, 23)
         Me.txtPostCode.TabIndex = 9
@@ -141,7 +142,7 @@ Partial Class frmActDetails
         'lblContact
         '
         Me.lblContact.AutoSize = True
-        Me.lblContact.Location = New System.Drawing.Point(55, 191)
+        Me.lblContact.Location = New System.Drawing.Point(261, 178)
         Me.lblContact.Name = "lblContact"
         Me.lblContact.Size = New System.Drawing.Size(52, 15)
         Me.lblContact.TabIndex = 10
@@ -149,7 +150,7 @@ Partial Class frmActDetails
         '
         'txtContact
         '
-        Me.txtContact.Location = New System.Drawing.Point(115, 190)
+        Me.txtContact.Location = New System.Drawing.Point(321, 177)
         Me.txtContact.Name = "txtContact"
         Me.txtContact.Size = New System.Drawing.Size(188, 23)
         Me.txtContact.TabIndex = 11
@@ -157,7 +158,7 @@ Partial Class frmActDetails
         'lblFirstName
         '
         Me.lblFirstName.AutoSize = True
-        Me.lblFirstName.Location = New System.Drawing.Point(40, 226)
+        Me.lblFirstName.Location = New System.Drawing.Point(246, 213)
         Me.lblFirstName.Name = "lblFirstName"
         Me.lblFirstName.Size = New System.Drawing.Size(67, 15)
         Me.lblFirstName.TabIndex = 12
@@ -165,7 +166,7 @@ Partial Class frmActDetails
         '
         'txtFirstName
         '
-        Me.txtFirstName.Location = New System.Drawing.Point(115, 223)
+        Me.txtFirstName.Location = New System.Drawing.Point(321, 210)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(188, 23)
         Me.txtFirstName.TabIndex = 13
@@ -173,7 +174,7 @@ Partial Class frmActDetails
         'lblLastName
         '
         Me.lblLastName.AutoSize = True
-        Me.lblLastName.Location = New System.Drawing.Point(43, 262)
+        Me.lblLastName.Location = New System.Drawing.Point(249, 249)
         Me.lblLastName.Name = "lblLastName"
         Me.lblLastName.Size = New System.Drawing.Size(66, 15)
         Me.lblLastName.TabIndex = 14
@@ -181,7 +182,7 @@ Partial Class frmActDetails
         '
         'txtLastName
         '
-        Me.txtLastName.Location = New System.Drawing.Point(115, 254)
+        Me.txtLastName.Location = New System.Drawing.Point(321, 241)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(188, 23)
         Me.txtLastName.TabIndex = 15
@@ -189,7 +190,7 @@ Partial Class frmActDetails
         'lblMobile1
         '
         Me.lblMobile1.AutoSize = True
-        Me.lblMobile1.Location = New System.Drawing.Point(51, 295)
+        Me.lblMobile1.Location = New System.Drawing.Point(257, 282)
         Me.lblMobile1.Name = "lblMobile1"
         Me.lblMobile1.Size = New System.Drawing.Size(56, 15)
         Me.lblMobile1.TabIndex = 16
@@ -197,7 +198,7 @@ Partial Class frmActDetails
         '
         'txtMobile1
         '
-        Me.txtMobile1.Location = New System.Drawing.Point(115, 287)
+        Me.txtMobile1.Location = New System.Drawing.Point(321, 274)
         Me.txtMobile1.Name = "txtMobile1"
         Me.txtMobile1.Size = New System.Drawing.Size(188, 23)
         Me.txtMobile1.TabIndex = 17
@@ -205,7 +206,7 @@ Partial Class frmActDetails
         'lblMobile2
         '
         Me.lblMobile2.AutoSize = True
-        Me.lblMobile2.Location = New System.Drawing.Point(51, 329)
+        Me.lblMobile2.Location = New System.Drawing.Point(257, 316)
         Me.lblMobile2.Name = "lblMobile2"
         Me.lblMobile2.Size = New System.Drawing.Size(56, 15)
         Me.lblMobile2.TabIndex = 18
@@ -213,7 +214,7 @@ Partial Class frmActDetails
         '
         'txtMobile2
         '
-        Me.txtMobile2.Location = New System.Drawing.Point(115, 321)
+        Me.txtMobile2.Location = New System.Drawing.Point(321, 308)
         Me.txtMobile2.Name = "txtMobile2"
         Me.txtMobile2.Size = New System.Drawing.Size(188, 23)
         Me.txtMobile2.TabIndex = 19
@@ -221,7 +222,7 @@ Partial Class frmActDetails
         'lblLandline
         '
         Me.lblLandline.AutoSize = True
-        Me.lblLandline.Location = New System.Drawing.Point(52, 362)
+        Me.lblLandline.Location = New System.Drawing.Point(258, 349)
         Me.lblLandline.Name = "lblLandline"
         Me.lblLandline.Size = New System.Drawing.Size(55, 15)
         Me.lblLandline.TabIndex = 20
@@ -229,7 +230,7 @@ Partial Class frmActDetails
         '
         'txtLandline
         '
-        Me.txtLandline.Location = New System.Drawing.Point(115, 354)
+        Me.txtLandline.Location = New System.Drawing.Point(321, 341)
         Me.txtLandline.Name = "txtLandline"
         Me.txtLandline.Size = New System.Drawing.Size(188, 23)
         Me.txtLandline.TabIndex = 21
@@ -237,7 +238,7 @@ Partial Class frmActDetails
         'lblFax
         '
         Me.lblFax.AutoSize = True
-        Me.lblFax.Location = New System.Drawing.Point(79, 393)
+        Me.lblFax.Location = New System.Drawing.Point(285, 380)
         Me.lblFax.Name = "lblFax"
         Me.lblFax.Size = New System.Drawing.Size(28, 15)
         Me.lblFax.TabIndex = 22
@@ -246,7 +247,7 @@ Partial Class frmActDetails
         'lblEmail
         '
         Me.lblEmail.AutoSize = True
-        Me.lblEmail.Location = New System.Drawing.Point(68, 429)
+        Me.lblEmail.Location = New System.Drawing.Point(274, 416)
         Me.lblEmail.Name = "lblEmail"
         Me.lblEmail.Size = New System.Drawing.Size(39, 15)
         Me.lblEmail.TabIndex = 23
@@ -255,7 +256,7 @@ Partial Class frmActDetails
         'lblEmail2
         '
         Me.lblEmail2.AutoSize = True
-        Me.lblEmail2.Location = New System.Drawing.Point(62, 464)
+        Me.lblEmail2.Location = New System.Drawing.Point(268, 451)
         Me.lblEmail2.Name = "lblEmail2"
         Me.lblEmail2.Size = New System.Drawing.Size(45, 15)
         Me.lblEmail2.TabIndex = 24
@@ -264,7 +265,7 @@ Partial Class frmActDetails
         'lblWebsite
         '
         Me.lblWebsite.AutoSize = True
-        Me.lblWebsite.Location = New System.Drawing.Point(55, 496)
+        Me.lblWebsite.Location = New System.Drawing.Point(261, 483)
         Me.lblWebsite.Name = "lblWebsite"
         Me.lblWebsite.Size = New System.Drawing.Size(52, 15)
         Me.lblWebsite.TabIndex = 25
@@ -273,24 +274,24 @@ Partial Class frmActDetails
         'lblABN
         '
         Me.lblABN.AutoSize = True
-        Me.lblABN.Location = New System.Drawing.Point(73, 528)
+        Me.lblABN.Location = New System.Drawing.Point(279, 515)
         Me.lblABN.Name = "lblABN"
         Me.lblABN.Size = New System.Drawing.Size(34, 15)
         Me.lblABN.TabIndex = 26
         Me.lblABN.Text = "ABN:"
         '
-        'Button1
+        'btnSave
         '
-        Me.Button1.Location = New System.Drawing.Point(97, 562)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(181, 54)
-        Me.Button1.TabIndex = 27
-        Me.Button1.Text = "Save All Customer details for All Contacts && Close"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSave.Location = New System.Drawing.Point(343, 547)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(142, 28)
+        Me.btnSave.TabIndex = 27
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
         '
         'txtFax
         '
-        Me.txtFax.Location = New System.Drawing.Point(115, 385)
+        Me.txtFax.Location = New System.Drawing.Point(321, 372)
         Me.txtFax.Multiline = True
         Me.txtFax.Name = "txtFax"
         Me.txtFax.Size = New System.Drawing.Size(188, 23)
@@ -298,43 +299,53 @@ Partial Class frmActDetails
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(115, 421)
+        Me.txtEmail.Location = New System.Drawing.Point(321, 408)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(188, 23)
         Me.txtEmail.TabIndex = 29
         '
         'txtEmail2
         '
-        Me.txtEmail2.Location = New System.Drawing.Point(115, 456)
+        Me.txtEmail2.Location = New System.Drawing.Point(321, 443)
         Me.txtEmail2.Name = "txtEmail2"
         Me.txtEmail2.Size = New System.Drawing.Size(188, 23)
         Me.txtEmail2.TabIndex = 30
         '
-        'TextBox1
+        'txtWebsite
         '
-        Me.TextBox1.Location = New System.Drawing.Point(115, 488)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(188, 23)
-        Me.TextBox1.TabIndex = 31
+        Me.txtWebsite.Location = New System.Drawing.Point(321, 475)
+        Me.txtWebsite.Name = "txtWebsite"
+        Me.txtWebsite.Size = New System.Drawing.Size(188, 23)
+        Me.txtWebsite.TabIndex = 31
         '
         'txtABN
         '
-        Me.txtABN.Location = New System.Drawing.Point(115, 520)
+        Me.txtABN.Location = New System.Drawing.Point(321, 507)
         Me.txtABN.Name = "txtABN"
         Me.txtABN.Size = New System.Drawing.Size(188, 23)
         Me.txtABN.TabIndex = 32
         '
-        'frmActDetails
+        'btnShowData
+        '
+        Me.btnShowData.Location = New System.Drawing.Point(610, 52)
+        Me.btnShowData.Name = "btnShowData"
+        Me.btnShowData.Size = New System.Drawing.Size(104, 30)
+        Me.btnShowData.TabIndex = 33
+        Me.btnShowData.Text = "Show Data"
+        Me.btnShowData.UseVisualStyleBackColor = True
+        '
+        'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 639)
+        Me.Controls.Add(Me.btnShowData)
         Me.Controls.Add(Me.txtABN)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtWebsite)
         Me.Controls.Add(Me.txtEmail2)
         Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.txtFax)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.lblABN)
         Me.Controls.Add(Me.lblWebsite)
         Me.Controls.Add(Me.lblEmail2)
@@ -362,7 +373,7 @@ Partial Class frmActDetails
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.lblAddress)
         Me.Controls.Add(Me.lblName)
-        Me.Name = "frmActDetails"
+        Me.Name = "Form1"
         Me.Text = "Account Details"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -396,10 +407,11 @@ Partial Class frmActDetails
     Friend WithEvents lblEmail2 As Label
     Friend WithEvents lblWebsite As Label
     Friend WithEvents lblABN As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnSave As Button
     Friend WithEvents txtFax As TextBox
     Friend WithEvents txtEmail As TextBox
     Friend WithEvents txtEmail2 As TextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtWebsite As TextBox
     Friend WithEvents txtABN As TextBox
+    Friend WithEvents btnShowData As Button
 End Class
