@@ -5,29 +5,30 @@ Imports Microsoft.EntityFrameworkCore
 Public Class Form1
 
     Public accountGuid As Guid
+    Dim IsNullGuid As Boolean
 
-    Public Function CheckGuid() As Boolean
-        If accountGuid.GetType Is Nothing Then
-            Return False
-        Else
+
+    Public Function CheckNullGuid() As Boolean
+        If accountGuid = Guid.Empty Then
             Return True
+        Else
+            Return False
         End If
     End Function
 
-    Public Sub CheckAndSetGuid()
-        If accountGuid.GetType Is Nothing Then
+    Public Sub SetGuid()
+        If accountGuid = Guid.Empty Then
             accountGuid = Guid.NewGuid()
-
         Else
             accountGuid = accountGuid
-
         End If
     End Sub
 
-
-
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        IsNullGuid = CheckNullGuid()
+
+        SetGuid()
 
     End Sub
 
@@ -81,13 +82,15 @@ Public Class Form1
                 db.AccountDetails.Add(newAccount)
 
                 ' Save the changes to the database
-                If CheckGuid() Then
-                    db.Update(newAccount)
-                    MessageBox.Show("Succesfully Updated the Database")
+                If IsNullGuid Then
+
+
+                    MessageBox.Show("Succesfully Saved to the Database")
                     db.SaveChanges()
                 Else
+                    db.Update(newAccount)
                     db.SaveChanges()
-                    MessageBox.Show("Succesfully Added to the Database")
+                    MessageBox.Show("Succesfully Updated the Database")
 
                 End If
 
@@ -100,10 +103,6 @@ Public Class Form1
         Catch ex As Exception
             MessageBox.Show(ex.StackTrace)
         End Try
-
-
-
-
 
 
     End Sub

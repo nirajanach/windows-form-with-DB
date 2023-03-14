@@ -32,10 +32,10 @@ Partial Class Form2
         'dgvAccounts
         '
         Me.dgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvAccounts.Location = New System.Drawing.Point(52, 53)
+        Me.dgvAccounts.Location = New System.Drawing.Point(24, 53)
         Me.dgvAccounts.Name = "dgvAccounts"
         Me.dgvAccounts.RowTemplate.Height = 25
-        Me.dgvAccounts.Size = New System.Drawing.Size(688, 235)
+        Me.dgvAccounts.Size = New System.Drawing.Size(1424, 235)
         Me.dgvAccounts.TabIndex = 0
         '
         'DataModelBindingSource
@@ -46,10 +46,10 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1471, 450)
         Me.Controls.Add(Me.dgvAccounts)
         Me.Name = "Form2"
-        Me.Text = "Form2"
+        Me.Text = "Data Table"
         CType(Me.dgvAccounts, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataModelBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
